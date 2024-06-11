@@ -4,4 +4,101 @@
     padding: 0;
     margin: 0;
     font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+}
+.contenido{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    border: 1.5px solid #c4d0e9;
+    background-color: #e5e8f5;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+header {
+    background-color: #8e24aa; /* Fondo pastel */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    border: 2px solid #ba68c8; /* Borde pastel */
+    border-radius: 10px;
+    position: relative;
+}
+
+header .logo {
+    max-width: 150px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+footer {
+    background-color: #8e24aa; /* Fondo pastel */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    border: 2px solid #ba68c8; /* Borde pastel */
+    border-radius: 10px;
+    margin-top: auto;
+}
+
+#content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    text-align: center;
+    border: 2px solid #d1c4e9; /* Borde pastel */
+    background-color: #ede7f6; /* Fondo pastel */
+    border-radius: 10px;
+    margin: 10px;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.navigation-buttons {
+    margin-top: 20px;
+}
+
+.navigation-buttons .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #7b1fa2; /* Fondo pastel */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #ab47bc; /* Borde pastel */
+    transition: background-color 0.3s;
+}
+
+.navigation-buttons .button:hover {
+    background-color: #6a1b9a; /* Fondo pastel */
+}
+
+h1, h2 {
+    color: #6a1b9a; /* Color pastel */
+}
+
+p {
+    color: #4a148c; /* Color pastel */
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #d1c4e9; /* Borde pastel */
+    border-radius: 10px;
+    margin: 10px 0;
 }
