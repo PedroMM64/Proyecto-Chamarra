@@ -5,29 +5,29 @@
     margin: 0;
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
+    box-sizing: border-box;
 }
-.contenido{
+.container{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     border: 1.5px solid #c4d0e9;
-    background-color: #e5e8f5;
+    background-color: #d4dbf7;
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
 }
 
-header {
-    background-color: #8e24aa; /* Fondo pastel */
-    color: white;
+.header {
+    background-color: #5e2e6b; 
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 1em 0;
-    border: 2px solid #ba68c8; /* Borde pastel */
+    border: 2px solid #ba68c8; 
     border-radius: 10px;
     position: relative;
 }
 
-header .logo {
+.header .logo {
     max-width: 150px;
     height: auto;
     position: absolute;
@@ -35,7 +35,7 @@ header .logo {
     left: 10px;
 }
 
-footer {
+.footer {
     background-color: #8e24aa; /* Fondo pastel */
     color: white;
     text-align: center;
@@ -45,7 +45,7 @@ footer {
     margin-top: auto;
 }
 
-#content {
+.contenido {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -68,37 +68,57 @@ nav a {
     margin-top: 20px;
 }
 
-.navigation-buttons .button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 5px;
-    background-color: #7b1fa2; /* Fondo pastel */
+
+.button {
+    background-color: #6a1b9a;
     color: white;
-    text-decoration: none;
+    border: 2px solid #4a148c;
     border-radius: 5px;
-    border: 2px solid #ab47bc; /* Borde pastel */
-    transition: background-color 0.3s;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.navigation-buttons .button:hover {
-    background-color: #6a1b9a; /* Fondo pastel */
+.button:hover {
+    background-color: #4a148c;
+    color: #ffffff; /* Blanco */
 }
+
 
 h1, h2 {
-    color: #6a1b9a; /* Color pastel */
+    color: #000000; /* Color pastel */
 }
 
 p {
-    color: #4a148c; /* Color pastel */
+    color: #000000; /* Color pastel */
     font-size: 1em;
     line-height: 1.6;
     margin: 10px 0;
 }
-
+.texto-footer{
+    color: #003cff;
+    font-size: 1.2rem;
+}
 img {
     max-width: 100%;
     height: auto;
     border: 2px solid #d1c4e9; /* Borde pastel */
     border-radius: 10px;
     margin: 10px 0;
+}
+
+.chamarra-container {
+    width: 100%; /* Ancho máximo */
+    max-height: 400px; /* Altura máxima para mantener la proporción */
+    overflow: hidden; /* Para ocultar cualquier parte de la imagen que se extienda más allá del div */
+    border: 2px solid #ccc; /* Borde de ejemplo */
+    border-radius: 10px; /* Borde redondeado de ejemplo */
+}
+
+.chamarra-img {
+    width: 100%; /* Para que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Para mantener la proporción */
 }
