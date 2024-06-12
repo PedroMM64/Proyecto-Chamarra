@@ -7,118 +7,75 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+body{
+    height: 100%;
+}
 .container{
+    background: linear-gradient(75deg, #24e75fa1 0%, #d352cfad 100%);
     display: flex;
     flex-direction: column;
-    border: 1.5px solid #c4d0e9;
-    background-color: #d4dbf7;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
+    justify-content: space-between;
+    height: 100vh;
 }
-
-.header {
-    background-color: #5e2e6b; 
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 1em 0;
-    border: 2px solid #ba68c8; 
-    border-radius: 10px;
-    position: relative;
+.header{
+    padding: 0.5rem 2rem;
+    box-shadow: 0px 2px 10px 1px #353333;
+    border-radius: 0 0 5px 5px;
+    background: #fff;
 }
-
-.header .logo {
-    max-width: 150px;
-    height: auto;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-
-.footer {
-    background-color: #8e24aa; /* Fondo pastel */
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-    border: 2px solid #ba68c8; /* Borde pastel */
-    border-radius: 10px;
-    margin-top: auto;
-}
-
-.contenido {
-    flex: 1;
+.header-container{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 360px;
+    height: auto;
+}
+.titulo{
+    color: #000;
+}
+.main{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2em;
-    text-align: center;
-    border: 2px solid #d1c4e9; /* Borde pastel */
-    background-color: #ede7f6; /* Fondo pastel */
-    border-radius: 10px;
-    margin: 10px;
 }
-
-nav a {
-    margin: 0 10px;
-    color: white;
-    text-decoration: none;
-}
-
-.navigation-buttons {
-    margin-top: 20px;
-}
-
-
-.button {
-    background-color: #6a1b9a;
-    color: white;
-    border: 2px solid #4a148c;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 1em;
-    text-decoration: none;
+.subtitulo{
+    padding: 1rem 0;
+    font-size: 55px;
+    
     text-transform: uppercase;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    word-spacing: 25px;
 }
-
-.button:hover {
-    background-color: #4a148c;
-    color: #ffffff; /* Blanco */
+.texto{
+    font-size: 1.3rem;
+    padding: 4px;
+    font-weight: 500;
 }
-
-
-h1, h2 {
-    color: #000000; /* Color pastel */
-}
-
-p {
-    color: #000000; /* Color pastel */
-    font-size: 1em;
-    line-height: 1.6;
-    margin: 10px 0;
-}
-.texto-footer{
-    color: #003cff;
+.boton-ver{
+    padding: 1rem;
+    margin-top: 30px;
+    border: 2.5px solid #6461f5;
+    border-radius: 12px;
+    color: #000;
     font-size: 1.2rem;
+    background: #c9c8ff;
+    transition: 0.2s ease;
 }
-img {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #d1c4e9; /* Borde pastel */
-    border-radius: 10px;
-    margin: 10px 0;
+.boton-ver:hover{
+    transform: translate(-4%,-5%);
+    box-shadow: 5px 5px 0px 0px #000000;
+    color: #fff;
+    font-weight: 600;
+    background: #4f5499;
+    border: 2.5px solid #a19ffa;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.7rem;
+    align-items: center;
+    background: #fff;
 }
 
-.chamarra-container {
-    width: 100%; /* Ancho máximo */
-    max-height: 400px; /* Altura máxima para mantener la proporción */
-    overflow: hidden; /* Para ocultar cualquier parte de la imagen que se extienda más allá del div */
-    border: 2px solid #ccc; /* Borde de ejemplo */
-    border-radius: 10px; /* Borde redondeado de ejemplo */
-}
-
-.chamarra-img {
-    width: 100%; /* Para que la imagen ocupe todo el ancho del contenedor */
-    height: auto; /* Para mantener la proporción */
-}
