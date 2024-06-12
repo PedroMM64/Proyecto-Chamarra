@@ -17,6 +17,12 @@ body{
     justify-content: space-between;
     height: 100vh;
 }
+.container-chamarra{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
 .header{
     padding: 0.5rem 2rem;
     box-shadow: 0px 2px 10px 1px #353333;
@@ -35,18 +41,56 @@ body{
 .titulo{
     color: #000;
 }
+.nav{
+    width: 360px;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-a{
+    color: #000;
+    transition: 0.2s ease;
+}
+.nav-a:hover{
+    transform: scale(1.1);
+    font-weight: 500;
+    border-bottom: 1.2px solid #6461f5;
+}
 .main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.main-chamarra{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.chamarra-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 25px;
+}
+.chamarra-card-img{
+    margin: 1rem 0;
+}
+.chamarra-card-texto{
+    display: flex;
+    flex-direction: column;
+}
 .subtitulo{
     padding: 1rem 0;
     font-size: 55px;
-    
     text-transform: uppercase;
     word-spacing: 25px;
+}
+.subtitulo-chamarra{
+    font-size: 40px;
+    text-transform: uppercase;
 }
 .texto{
     font-size: 1.3rem;
@@ -71,6 +115,30 @@ body{
     background: #4f5499;
     border: 2.5px solid #a19ffa;
 }
+.boton-navegacion{
+    width: 360px;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.boton{
+    padding: 12px;
+    background: #7acaff;
+    color: #000;
+    border: 2.5px solid #7e2ddb;
+    transition: 0.3s ease;
+    border-radius: 12px 12px 0px 0px;
+    
+}
+.boton:hover{
+    transform: scale(1.2);
+    transform: translate(-4%,-5%);
+    box-shadow: 5px 5px 0px 0px #000000;
+    color: #fff;
+    font-weight: 600;
+    background: #201cec;
+    border: 2.5px solid #25ffd0;
+}
 .footer{
     display: flex;
     justify-content: space-between;
@@ -78,4 +146,6 @@ body{
     align-items: center;
     background: #fff;
 }
-
+.texto-footer{
+    color: blue;
+}
