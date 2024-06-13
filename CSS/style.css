@@ -35,7 +35,7 @@ body{
     justify-content: space-between;
 }
 .logo{
-    width: 360px;
+    width: 50px;
     height: auto;
 }
 .titulo{
@@ -122,22 +122,16 @@ body{
     justify-content: space-between;
 }
 .boton{
-    padding: 12px;
+    padding: 1rem;
     background: #7acaff;
     color: #000;
     border: 2.5px solid #7e2ddb;
-    transition: 0.3s ease;
-    border-radius: 12px 12px 0px 0px;
-    
+    transition: 0.2s ease;
+    border-radius: 14px;
 }
 .boton:hover{
-    transform: scale(1.2);
-    transform: translate(-4%,-5%);
-    box-shadow: 5px 5px 0px 0px #000000;
     color: #fff;
-    font-weight: 600;
-    background: #201cec;
-    border: 2.5px solid #25ffd0;
+    font-weight: 600;    
 }
 .footer{
     display: flex;
