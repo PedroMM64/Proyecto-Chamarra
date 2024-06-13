@@ -79,8 +79,7 @@ body{
     margin: 1rem 0;
 }
 .chamarra-card-texto{
-    display: flex;
-    flex-direction: column;
+    text-align: justify;
 }
 .subtitulo{
     padding: 1rem 0;
@@ -123,7 +122,7 @@ body{
 }
 .boton{
     padding: 1rem;
-    background: #7acaff;
+    background: #c4e6fd;
     color: #000;
     border: 2.5px solid #7e2ddb;
     transition: 0.2s ease;
@@ -131,6 +130,7 @@ body{
 }
 .boton:hover{
     color: #fff;
+    background: #0099ff;
     font-weight: 600;    
 }
 .footer{
