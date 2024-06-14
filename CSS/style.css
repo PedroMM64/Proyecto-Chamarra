@@ -76,7 +76,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%;
+    width: 80%;
     padding: 25px;
 }
 .chamarra-card-box{
@@ -84,7 +84,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0 2rem;
     box-shadow: 4px 5px 10px 1px #000000;
     border-radius: 1rem;
 }
@@ -188,6 +188,30 @@ body{
         margin: 0 1rem;
     }
 }
+@media screen and (max-width: 1200px) {
+    .header-container{
+        justify-content: space-between;
+    }
+    .header-container h1 {
+        margin-left: 0;
+    }
+    .nav{
+        display: none;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .chamarra-card-box{
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .chamarra-card-img{
+        width: auto;
+    }
+    .chamarra-card-img img{
+        width: 250px;
+        padding: 0;
+    }
+}
 @media screen and (max-width: 800px) {
     .subtitulo{
         text-align: center;
@@ -198,14 +222,41 @@ body{
         margin-left: 0;
     }
 }
+@media screen and (max-width: 650px) {
+    .header-container h1{
+        font-size: 1.7rem;
+    }
+    .subtitulo-chamarra{
+        font-size: 1.5rem;
+    }
+    .chamarra-card-img img{
+        width: 160px;
+    }
+}
 @media screen and (max-width: 523px) {
     .titulo{
         font-size: 1.3rem;
     }
-}
-@media screen and (max-width: 523px) {
     .header{
         padding: 0.5rem 1rem;
+    }
+    .chamarra-card{
+        width: 100%;
+    }
+    .boton-navegacion{
+        justify-content: space-evenly;
+    }
+    .footer{
+        padding: 1.7rem 0.5rem;
+    }
+}
+@media screen and (max-width: 430px) {
+    .header-container h1 {
+        font-size: 1.2rem;
+    }
+    .boton-navegacion{
+        justify-content: center;
+        gap: 6px;
     }
     .footer{
         padding: 1.7rem 0.5rem;
