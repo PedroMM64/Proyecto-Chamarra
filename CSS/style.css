@@ -103,7 +103,7 @@ body{
 }
 .subtitulo{
     padding: 1rem 0;
-    font-size: 40px;
+    font-size: 60px;
     text-transform: uppercase;
     word-spacing: 25px;
 }
@@ -163,4 +163,51 @@ body{
 }
 .texto-footer{
     color: blue;
+}
+
+@media screen and (max-width: 1698px) {
+    .subtitulo{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .texto{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 1366px) {
+    .subtitulo{
+        font-size: 30px;
+        word-spacing: 0px;
+    }
+    .boton-ver{
+        font-size: 1rem;
+    }
+    .texto{
+        text-align: center;
+        margin: 0 1rem;
+    }
+}
+@media screen and (max-width: 800px) {
+    .subtitulo{
+        text-align: center;
+        font-size: 25px;
+        margin: 0 1rem;
+    }
+    .header-container h1 {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 523px) {
+    .titulo{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 523px) {
+    .header{
+        padding: 0.5rem 1rem;
+    }
+    .footer{
+        padding: 1.7rem 0.5rem;
+    }
 }
